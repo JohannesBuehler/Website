@@ -1,9 +1,10 @@
 header{
-    padding: 10px
+    padding: 10px;
     text-align: left;
     background-color: rgba(145,227,228,1);
     font-size: xx-large;
     color: white;
+    width: 100vw;
 }
 h2 {
     color: white;
@@ -35,7 +36,10 @@ body{
     background: linear-gradient(0deg, rgba(145,227,228,1) 0%, rgba(255,182,25,1) 100%);
 
 }
-.bildeins{
+.bildzwei{
+    height: 20vh;
+    width: 11vw;
+    object-fit: cover;
 
 }
 table {
@@ -44,6 +48,7 @@ table {
 th, td {
     padding: 0.5em;
     border: 2px solid black;
+    background-color: rgba(255,182,25,1);
 }
 tr:hover {
     background-color: mediumaquamarine;
@@ -106,4 +111,58 @@ footer{
 #Bild1{
     height: 15vh;
     width: 100vw;
+}
+.übermich{
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+}
+.audio {
+    margin-top: 30px;
+    margin-bottom: 150px;
+}
+.email {
+    font-size: xx-large;
+    text-align: center;
+    color: #4ca1af;
+    border: 2px solid black;
+    padding: 0.5em;
+    margin-bottom: 150px;
+}
+.email:hover {
+    background-color: rgba(145,227,228,1);
+}
+
+carousel {
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.carousel.slide.carousel-fade.pointer-eventl {
+    margin: 50px 150px;
+}
+.Sprachen {
+    text-align: center;
+    margin-top: 20px;
+}
+.titellebenslauf {
+    color: white;
+    text-align: center;
+    font-size: xxx-large;
+    padding-left: 240px;
+}
+.photworkers {
+    padding-top: 20px;
+}
+.AWKGroup {
+    padding-top: 20px;
+}
+.RFT{
+    padding-top: 20px;
+}
+.footer {
+    text-align: right;
+}
+.fotografiebeispiele {
+    margin-top: 20px;
 }

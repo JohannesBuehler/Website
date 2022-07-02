@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <style>
-        @import url(Stylesheet.css);
+        @import url(Stylesheet/Stylesheet.css);
     </style>
 </head>
 <body>
@@ -15,42 +15,33 @@
         <button class="dropbtn"> <strong>Menü</strong></button>
         <div class="dropdown-content">
             <a href="index.html"> Über mich </a>
-            <a href="Bilder.html"> Bilder </a>
         </div>
     </div>
 </header>
-<h2>
-    <a href="#Joe">Johannes Bühler</a>
-</h2>
-<p><h2>Bruhstrasse 40</h2></p>
-<p><h2>8500 Winterthur</h2></p>
-<p><h2><a href="mailto:johannes.buehler@awk.ch">johannes.buehler@awk.ch</a></h2></p>
-<p class="Bubbles"><a href="Bilder/Bubbles_RGB_V02.png"><img src="Bilder/Bubbles_RGB_V02.png" alt="Bubbles"width=""
-                                                             height="100" /></a></p>
-
-<h2>
-</h2>
+<div class="titellebenslauf">Lebenslauf</div>
 <h3>
+    <div class="Sprachen">
     <dl>
-        <dt>
+        <dd>
             Muttersprache
-        </dt>
-        <dd>
-            <p>Deutsch</p>
         </dd>
         <dt>
+           Deutsch
+        </dt>
+        <dd>
             Sprachen
-        </dt>
-        <dd>
-            <p>Englisch, definitiv kein <a href="Lebenslauf.html">Französisch </a></p>
         </dd>
         <dt>
-            Nationalität
+            Englisch, definitiv kein
         </dt>
         <dd>
-            <p>Schweiz</p>
+            Nationalität
         </dd>
+        <dt>
+            Schweiz
+        </dt>
     </dl>
+    </div>
 </h3>
 <h4>
     <a id="Joe"> Berufserfahrung</a>
@@ -67,9 +58,26 @@
 </table>
 <ul>
     <li>
-        <p>Photoworkers</p>
-        <p>Strasseinwinterthur 21</p>
-        <p> 8500 Winterthur</p>
+        <div class="photworkers"><a href="https://www.photoworkers.ch/" target="_blank"> Photoworkers</a></div>
+        Fröschenweidstrasse 2
+        <p>8404 Winterthur</p>
+    </li>
+</ul>
+<table class="align-center">
+    <tr>
+        <th>
+            Mediamatiker
+        </th>
+        <th>
+           Ausbildung von 09.08.2021-jetzt
+        </th>
+    </tr>
+</table>
+<ul>
+    <li>
+        <div class="AWKGroup"><a href="https://www.awk.ch//" target="_blank"> AWK Group</a></div>
+        Leutschenbachstrasse 45
+        <p>8050 Zürich</p>
     </li>
 </ul>
 <h4>
@@ -77,7 +85,7 @@
 </h4>
 <ul>
     <li>
-        <p>keine</p>
+        Unterstufe-Sekundarstufe <div class="RFT"><a href="https://www.schule-rft.ch/" target="_blank"> Schule RFT</a></div>
     </li>
 </ul>
 <h4>
@@ -86,14 +94,54 @@
 <table class="align-center">
     <tr>
         <th>
-            Sport
+            Basketball
         </th>
         <th>
             Musik
         </th>
+        <th>
+            Fahrrad fahren
+        </th>
+        <th>
+            Fillm & Fotografie
+        </th>
     </tr>
 </table>
-<footer>Fußzeile</footer>
+<h2 class="fotografiebeispiele">Ich mache sehr gerne lustige Weitwinkel Bilder, das sieht so aus:</h2>
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="Bilder/weitwinkel1.jpeg" class="mx-auto d-block w-50" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="Bilder/weitwinkel2.jpeg" class="mx-auto d-block w-50" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="Bilder/weitwinkel3.jpeg" class="mx-auto d-block w-50" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="Bilder/weitwinkel4.jpeg" class="mx-auto d-block w-50" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="Bilder/weitwinkel5.jpeg" class="mx-auto d-block w-50" alt="...">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<footer>Portfolio Johannes Bühler | Kontakt:<a href="mailto:johannes.buehler@awk.ch"> johannes.buehler@awk.ch</a></footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
 </body>
 </html>
